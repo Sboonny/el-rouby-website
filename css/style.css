@@ -1,3 +1,8 @@
+/* nav font Lobster */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* content font slabo */
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
 /* root values change them if you want different values for the content */
 :root {
   /* root is mistyped */
@@ -86,3 +91,9 @@ a logo and 3 button links to home, about and contact */
   color: hsl(34, 88%, 91%);
 }
 
+.images-slider-container {
+  display: grid;
+  grid-template-columns: 1/4;
+  grid-template-rows: 1/1;
+  overflow: auto;
+}
