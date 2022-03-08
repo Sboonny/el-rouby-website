@@ -315,6 +315,11 @@ select {
   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
 
+.header-area {
+  justify-content: flex-end;
+  outline: 2px solid green;
+}
+
 .primary-header {
   justify-content: space-between;
   align-items: center;
@@ -507,20 +512,24 @@ body {
   .grid-container {
     text-align: left;
     column-gap: var(--container-gap, 2rem);
-    grid-template-columns:
-      minmax(1rem, 0.5fr)
+    grid-template-rows:
+      minmax(1rem, 1fr)
       minmax(1rem, 1fr);
   }
+
   .grid-container--home > *:first-child {
     grid-column: 1;
   }
 
   .grid-container--home > *:last-child {
-    grid-column: 2;
+    grid-column: 3;
   }
 
   .grid-container--home {
     padding-bottom: max(6rem, 20vh);
     align-items: end;
+  }
+  .grid-container--home > picture {
+    width: 50vw;
   }
 }
