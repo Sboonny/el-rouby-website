@@ -512,24 +512,14 @@ body {
   .grid-container {
     text-align: left;
     column-gap: var(--container-gap, 2rem);
-    grid-template-rows:
-      minmax(1rem, 1fr)
-      minmax(1rem, 1fr);
-  }
-
-  .grid-container--home > *:first-child {
-    grid-column: 1;
-  }
-
-  .grid-container--home > *:last-child {
-    grid-column: 3;
+    grid-template-columns: repeat(2, minmax(1rem, 1fr));
   }
 
   .grid-container--home {
     padding-bottom: max(6rem, 20vh);
     align-items: end;
   }
-  .grid-container--home > picture {
+  .grid-container--home picture {
     width: 50vw;
   }
 }
