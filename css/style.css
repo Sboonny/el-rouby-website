@@ -311,10 +311,6 @@ select {
 
 /* primary-header */
 
-.logo {
-  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
-}
-
 .header-area {
   justify-content: flex-end;
   outline: 2px solid green;
@@ -509,6 +505,9 @@ body {
   }
 }
 @media (min-width: 45em) {
+  .logo {
+    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+  }
   .grid-container {
     text-align: left;
     column-gap: var(--container-gap, 2rem);
