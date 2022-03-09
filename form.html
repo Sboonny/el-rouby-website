@@ -7,18 +7,34 @@
     <title>Al Rouby Prototype</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
-  <body>
-    <nav class="navbar">
-      <img src="#" target="" class="navbar-img" />
-      <!-- change ul to tag to the horizontal -->
-      <ul class="navbar-content">
-        <li><a class="navbar-links">home</a></li>
-        <li><a class="navbar-links">about</a></li>
-        <li><a class="navbar-links">contact us</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h1>Duties and taxes Calculation To Egypt</h1>
+  <body class="home">
+    <a class="skip-to-content" href="#main">Skip to content</a>
+    <header class="flex primary-header">
+      <div>
+        <img src="./Website-icons/Logo.png" alt="al-rouby logo" class="logo" style="justify-content: flex-start" />
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+          <li >
+            <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="about.html">About</a>
+          </li>
+          <li>
+            <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html">contact</a>
+          </li>
+          <li class="active">
+            <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="form.html">form</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="flex flex-container--contact flow">
+      <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">Duties and Taxes To Egypt Calculation</h1>
       <form>
       <fieldset>
         <label>Shipment Orgin
