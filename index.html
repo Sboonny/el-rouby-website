@@ -13,6 +13,8 @@
     <title>Al Rouby Prototype</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <script src="script.js" defer></script>
+    <script src="modal.js" defer></script>
+    
   </head>
   <body class="home">
     <a class="skip-to-content" href="#main">Skip to content</a>
@@ -83,48 +85,65 @@
           goods in Egypt, We will provide the most effecent way to insure your
           success.
         </p>
-        <a
-          class="large-button uppercase ff-serif text-dark bg-white"
-          >Contact</a
-        >
-      </article>
+    
+        <button class="large-button uppercase ff-serif text-dark bg-white open-button">Contact</button>
+  <!-- modal -->
+  <dialog class="modal" id="modal">
+    <h2>Link to us</h2>
+    <form class="form" method="dialog">
+      <label>Your name <input type="text"></label>
+      <label>Your email <input type="email"></label>
+      <button class="button" type="submit">submit form</button>
+      <p>Want to know about custom cleareance. you can reach us with:</p>
+      <div class='flex flex-direction-rows' style='--gap: 2em'>
       
+        <a href='#'>
+          <picture>
+            <source media='(min-width: 35em)' srcset='./Website-icons/icons/facebook-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/facebook.png">
+              <img src='./Website-icons/icons/facebook-phone.png' alt='facebook'>
+            </picture>
+          </a>
+          
+          <a href='#'>
+            <picture>
+            <source media='(min-width: 35em)' srcset='./Website-icons/icons/linkedin-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/linkedin.png">
+            <img src='./Website-icons/icons/linkedin-phone.png' alt='linkedin'>
+          </picture>
+          </a>
+          
+          <a href='#'>
+            <picture>
+              <source media='(min-width: 35em)' srcset='./Website-icons/icons/telegram-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/telegram.png">
+              <img src='./Website-icons/icons/telegram-phone.png' alt='telegram'>
+            </picture>
+          </a>
+          
+          <a href='#'>
+          <picture>
+            <source media='(min-width: 35em)' srcset='./Website-icons/icons/email-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/email.png">
+            <img src='./Website-icons/icons/email-phone.png' alt='email'>
+          </picture>
+        </a>
+          
+          <a href='#'>
+            <picture>
+              <source media='(min-width: 35em)' srcset='./Website-icons/icons/whatsapp-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/whatsapp.png">
+              <img src='./Website-icons/icons/whatsapp-phone.png' alt='whatsapp'>
+            </picture>
+          </a>
+          
+        </div>
+      <button class="button close-button">close modal</button>
+    </form>
+    </dialog>
+      </article>
       <picture>
         <source
         media='(min-width: 45em)'
         srcset="/Website-icons/backgrounds/Home-image.png"
         >
-        <img src='./Website-icons/backgrounds/Home-image-phone.png'>
+        <img src='./Website-icons/backgrounds/Home-image-phone.png' alt='shipping port'>
       </picutre>
     </main>
   </body>
 </html>
-<!-- about -->
-      <!-- 
-من نحن
-شركة الروبي تم تأسيسها سنة 1988 حيث بدأت طريقها بتخليص الجمركي في ميناء بورتوفيق 
-ثم توسعت لكافة موانئ كانت من الاوائل الشركات في ميناء
- دبئ الدولي بالعين السخنة -->
-      <!-- 
-معرفة افضل وأسهل طريقة 
-لشحن بضاعتك توفير لأكثر من طريقة
-للشحن الدولي -->
-      <!--  
-الوجود الدائم اثناء الكشف والشحن
-لحاويتك وشحنتك طول 
-الوقت -->
-      <!-- 
-السرعة في الرد والاجابة علي اي 
-استفسارات لاي شئ يخص
-الجمارك -->
-      <!-- contact -->
-      <!-- 6 Street Damascus
-Port Taofik , Suez , Egypt
-Tel
-+201000628855
-Email
-info@al-rouby.com -->
-      <!-- 
-السرعة في الرد والاجابة علي اي 
-استفسارات لاي شئ يخص
-الجمارك -->
