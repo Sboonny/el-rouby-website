@@ -1,122 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Nunito:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Nunito:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Al Rouby Prototype</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
-    <script src="script.js" defer></script>
-    <script src="modal.js" defer></script>
-    
-  </head>
-  <body class="home">
-    <a class="skip-to-content" href="#main">Skip to content</a>
-    <header class="flex primary-header">
-      <picture>
-        <source media='(min-width: 35em)' srcset='./Website-icons/Logo-tablet.png'>
-        <img
-          src="./Website-icons/Logo-tablet.png"
-          alt="al-rouby logo"
-          class="logo"
-          style="justify-content: flex-start"
-        />
-      </picture>
-      
-    </header>
-    <main id="main" class="grid-container grid-container--home flow">
-      <article class="flow">
-        <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
-          CUSTOM CLEARANCE
-          <span class="d-block fs-700 ff-serif text-white letter-spacing-3"
-            >AL-ROUBY</span
-          >
-        </h1>
-        <p class="fs-500 letter-spacing-3 text-accent">
-          was established in 1988.
-        </p>
-        <p class='fs-400 letter-spacing-4 text-white'>
-          You can expect our services in every Egyptian port. Whether you are
-          worried about taxes, suitable port for you goods, or transporting your
-          goods in Egypt, We will provide the most effecent way to insure your
-          success.
-        </p>
-    
-        <button class="large-button uppercase ff-serif text-dark bg-white open-button fs-500">Contact</button>
-  <!-- modal -->
-  <div class='flex '>
-  <dialog class="modal" id="modal">
-    <h2 class='text-accent ff-sans-cond'>Link to us</h2>
-    <form class="form" method="dialog">
-      <fieldset class='flex flex-direction-columns '>
-      <label for='name' class='text-white ff-sans-normal'>Your name </label>
-      <input id="name" type="text" class='fs-200 ff-sans-normal text-dark' required>
-      <label for='email' class='text-white ff-sans-normal'>Your email </label>
-      <input id='email' type="email" class='fs-200 ff-sans-normal text-dark' required>
-      <label for="telNo" class='text-white ff-sans-normal'>Phone number</label>
-      <input id="telNo" name="phone" class='phone-input fs-200 ff-sans-normal text-dark' title='Please enter a phone number example: +201000000000' pattern="\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*" type="tel" required>
-      <button class="submit-button large-button fs-300 ff-serif uppercase" type="submit">submit</button>
-    </fieldset>
-      <p class='text-white ff-sans-normal fs-300 border-top'>Want to know about custom cleareance, You can reach us with:</p>
-      <div class='flex flex-direction-rows icons' style='--gap: 2em'>
-      
-        <a href='#'>
-          <picture>
-            <source media='(min-width: 35em)' srcset='./Website-icons/icons/facebook-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/facebook.png">
-              <img src='./Website-icons/icons/facebook-phone.png' alt='facebook'>
-            </picture>
-          </a>
-          
-          <a href='#'>
-            <picture>
-            <source media='(min-width: 35em)' srcset='./Website-icons/icons/linkedin-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/linkedin.png">
-            <img src='./Website-icons/icons/linkedin-phone.png' alt='linkedin'>
-          </picture>
-          </a>
-          
-          <a href='#'>
-            <picture>
-              <source media='(min-width: 35em)' srcset='./Website-icons/icons/telegram-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/telegram.png">
-              <img src='./Website-icons/icons/telegram-phone.png' alt='telegram'>
-            </picture>
-          </a>
-          
-          <a href='#'>
-          <picture>
-            <source media='(min-width: 35em)' srcset='./Website-icons/icons/email-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/email.png">
-            <img src='./Website-icons/icons/email-phone.png' alt='email'>
-          </picture>
-        </a>
-          
-          <a href='#'>
-            <picture>
-              <source media='(min-width: 35em)' srcset='./Website-icons/icons/whatsapp-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/whatsapp.png">
-              <img src='./Website-icons/icons/whatsapp-phone.png' alt='whatsapp'>
-            </picture>
-          </a>
-          
-        </div>
-      <button class="button close-button large-button fs-300 ff-serif uppercase">Close</button>
-    </form>
-    </dialog>
-  </div>
-      </article>
-      <picture>
-        <source
-        media='(min-width: 45em)'
-        srcset="/Website-icons/backgrounds/Home-image.png"
-        >
-        <img src='./Website-icons/backgrounds/Home-image-phone.png' alt='shipping port'>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Nunito:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <meta name='description' content='Custom cleareance services in Egypt' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Al Rouby Prototype</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <link rel='canonical' href='#'>
+  <link rel='canonical' href='#'>
+  <script src="script.js" defer></script>
+  <script src="modal.js" defer></script>
+
+</head>
+
+<body class="home">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="flex primary-header">
+    <picture>
+      <source media='(min-width: 35em)' srcset='./Website-icons/Logo-tablet.png'>
+      <img src="./Website-icons/Logo-tablet.png" alt="al-rouby logo" class="logo" style="justify-content: flex-start" />
+    </picture>
+
+  </header>
+  <main id="main" class="grid-container grid-container--home flow">
+    <article class="flow">
+      <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
+        CUSTOM CLEARANCE
+        <span class="d-block fs-700 ff-serif text-white letter-spacing-3">AL-ROUBY</span>
+      </h1>
+      <p class="fs-500 letter-spacing-3 text-accent">
+        was established in 1988.
+      </p>
+      <p class='fs-400 letter-spacing-4 text-white'>
+        You can expect our services in every Egyptian port. Whether you are
+        worried about taxes, suitable port for you goods, or transporting your
+        goods in Egypt, We will provide the most effecent way to insure your
+        success.
+      </p>
+
+      <button class="large-button uppercase ff-serif text-dark bg-white open-button fs-500">Contact</button>
+      <!-- modal -->
+      <div class='flex '>
+        <dialog class="modal" id="modal">
+          <h2 class='text-accent ff-sans-cond'>Link to us</h2>
+          <form class="form" method="dialog">
+            <fieldset class='flex flex-direction-columns '>
+              <label for='name' class='text-white ff-sans-normal'>Your name </label>
+              <input id="name" type="text" class='fs-200 ff-sans-normal text-dark' required>
+              <label for='email' class='text-white ff-sans-normal'>Your email </label>
+              <input id='email' type="email" class='fs-200 ff-sans-normal text-dark' required>
+              <label for="telNo" class='text-white ff-sans-normal'>Phone number</label>
+              <input id="telNo" name="phone" class='phone-input fs-200 ff-sans-normal text-dark' title='Please enter a phone number example: +201000000000' pattern="\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*" type="tel" required>
+              <button class="submit-button large-button fs-300 ff-serif uppercase" type="submit">submit</button>
+            </fieldset>
+            <p class='text-white ff-sans-normal fs-300 border-top'>Want to know about custom cleareance, You can reach us with:</p>
+            <div class='flex flex-direction-rows icons' style='--gap: 2em'>
+
+              <a href='#'>
+                <picture>
+                  <source media='(min-width: 35em)' srcset='./Website-icons/icons/facebook-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/facebook.png">
+                  <img src='./Website-icons/icons/facebook-phone.png' alt='facebook'>
+                </picture>
+              </a>
+
+              <a href='#'>
+                <picture>
+                  <source media='(min-width: 35em)' srcset='./Website-icons/icons/linkedin-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/linkedin.png">
+                  <img src='./Website-icons/icons/linkedin-phone.png' alt='linkedin'>
+                </picture>
+              </a>
+
+              <a href='#'>
+                <picture>
+                  <source media='(min-width: 35em)' srcset='./Website-icons/icons/telegram-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/telegram.png">
+                  <img src='./Website-icons/icons/telegram-phone.png' alt='telegram'>
+                </picture>
+              </a>
+
+              <a href='#'>
+                <picture>
+                  <source media='(min-width: 35em)' srcset='./Website-icons/icons/email-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/email.png">
+                  <img src='./Website-icons/icons/email-phone.png' alt='email'>
+                </picture>
+              </a>
+
+              <a href='#'>
+                <picture>
+                  <source media='(min-width: 35em)' srcset='./Website-icons/icons/whatsapp-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/whatsapp.png">
+                  <img src='./Website-icons/icons/whatsapp-phone.png' alt='whatsapp'>
+                </picture>
+              </a>
+
+            </div>
+            <button class="button close-button large-button fs-300 ff-serif uppercase">Close</button>
+          </form>
+        </dialog>
+      </div>
+    </article>
+    <picture>
+      <source media='(min-width: 45em)' srcset="/Website-icons/backgrounds/Home-image.png">
+      <img src='./Website-icons/backgrounds/Home-image-phone.png' alt='shipping port'>
       </picutre>
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>
