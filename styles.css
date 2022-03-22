@@ -19,7 +19,7 @@
   --fs-200: 0.875rem;
 
   /* font-families */
-  --ff-serif: "Bellefair", serif;
+  --ff-serif: "Nunito", sans-serif;
   --ff-sans-cond: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Barlow", sans-serif;
 }
@@ -86,7 +86,7 @@ body {
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   color: hsl(var(--clr-white));
-  background-color: hsl(var(--clr-dark));
+  background: linear-gradient(150deg, hsl(36, 50%, 25%) 40%, hsl(36, 76%, 55%));
   line-height: 1.5;
   min-height: 100vh;
   scrollbar-gutter: stable;
@@ -136,6 +136,10 @@ select {
 
 .flex-direction-rows {
   flex-direction: row;
+}
+
+.flex-direction-columns {
+  flex-direction: column;
 }
 
 .grid {
@@ -287,32 +291,22 @@ select {
 /* ------------------- */
 
 .large-button {
-  font-size: 1.5rem;
+  font-weight: 600;
   position: relative;
   z-index: 1;
   display: inline-grid;
   place-items: center;
   padding: 0 2em;
   border-radius: 10px;
+
   text-decoration: none;
+  transition: opacity 500ms linear, transform 50ms ease-in-out;
 }
 
-.large-button::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background: hsl(var(--clr-white) / 0.1);
-  border-radius: 10px;
-  box-shadow: 0px 0px 2px hsl(var(--clr-white) / 0);
-  transition: opacity 500ms linear, transform 750ms ease-in-out;
-}
-
-.large-button:hover::after,
-.large-button:focus::after {
+.large-button:hover,
+.large-button:focus {
   box-shadow: 0px 0px 2px hsl(var(--clr-white) / 1);
-  transform: scale(1.05);
+  transform: scale(1.005);
 }
 
 /* primary-header */
@@ -455,6 +449,9 @@ select {
   background-color: transparent;
 }
 
+.border-top {
+  border-top: 1.5px solid #3b3b4f;
+}
 .dot-indicators > * {
   cursor: pointer;
   border: 0;
@@ -546,9 +543,10 @@ body {
 /* ---------------- */
 .modal {
   padding: 1em;
-  max-width: 50ch;
+  max-width: 70ch;
   border: 0;
   box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+  background-color: hsl(36 50% 6% / 0.95);
 }
 
 .modal > * {
@@ -556,5 +554,35 @@ body {
 }
 
 .modal::backdrop {
-  background: hsl(var(--clr-light) / 0.4);
+  background: linear-gradient(150deg, hsl(36, 50%, 5%) 90%, hsl(36, 76%, 15%));
+  backdrop-filter: blur(1.5rem);
+  opacity: 0.2;
+}
+
+fieldset {
+  border: none;
+  padding-block: 2rem;
+}
+
+.submit-button {
+  display: block;
+  width: 35%;
+  margin: 0.5em auto;
+  height: 2em;
+  min-width: 150px;
+}
+.close-button {
+  display: block;
+  width: 35%;
+  margin: 0.5em auto;
+  height: 2em;
+  min-width: 150px;
+}
+
+.icons {
+  justify-content: center;
+  margin-block: 1em 1.1em;
+}
+input {
+  border: 1px solid black;
 }

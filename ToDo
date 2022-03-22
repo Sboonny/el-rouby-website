@@ -33,3 +33,147 @@ info@al-rouby.com -->
 السرعة في الرد والاجابة علي اي 
 استفسارات لاي شئ يخص
 الجمارك -->
+
+
+
+; nav html
+<!-- <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav> -->
+        <!-- <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation underline-indicators flex"
+        > -->
+          <!-- <li class="active">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="contact.html"
+              >contact</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="form.html"
+              >form</a
+            >
+          </li> -->
+        <!-- </ul> -->
+      <!-- </nav> -->
+
+
+
+; contact: html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Nunito:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al Rouby Prototype</title>
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body class="home">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="flex primary-header">
+    <div>
+      <img src="./Website-icons/Logo.png" alt="al-rouby logo" class="logo" style="justify-content: flex-start" />
+    </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+    <nav>
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+        <li>
+          <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="about.html">About</a>
+        </li>
+        <li class="active">
+          <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="contact.html">contact</a>
+        </li>
+        <li>
+          <a class="ff-sans-cond uppercase text-white letter-spacing-2" href="form.html">form</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" class="flex flex-container--contact flow">
+    <article class="flow">
+      <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
+        CONTACT
+      </h1>
+      <p class="fs-300  text-accent">
+        Want to know about custom cleareance. you can reach us with:
+      </p>
+    </article>
+
+    <div class='flex flex-direction-rows' style='--gap: 2em'>
+      
+      <a href='#'>
+        <picture>
+          <source media='(min-width: 35em)' srcset='./Website-icons/icons/facebook-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/facebook.png">
+            <img src='./Website-icons/icons/facebook-phone.png' alt='facebook'>
+          </picture>
+        </a>
+        
+        <a href='#'>
+          <picture>
+          <source media='(min-width: 35em)' srcset='./Website-icons/icons/linkedin-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/linkedin.png">
+          <img src='./Website-icons/icons/linkedin-phone.png' alt='linkedin'>
+        </picture>
+        </a>
+        
+        <a href='#'>
+          <picture>
+            <source media='(min-width: 35em)' srcset='./Website-icons/icons/telegram-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/telegram.png">
+            <img src='./Website-icons/icons/telegram-phone.png' alt='telegram'>
+          </picture>
+        </a>
+        
+        <a href='#'>
+        <picture>
+          <source media='(min-width: 35em)' srcset='./Website-icons/icons/email-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/email.png">
+          <img src='./Website-icons/icons/email-phone.png' alt='email'>
+        </picture>
+      </a>
+        
+        <a href='#'>
+          <picture>
+            <source media='(min-width: 35em)' srcset='./Website-icons/icons/whatsapp-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/whatsapp.png">
+            <img src='./Website-icons/icons/whatsapp-phone.png' alt='whatsapp'>
+          </picture>
+        </a>
+        
+      </div>
+      <picture>
+        <source media='(min-width: 45em)' srcset="./Website-icons/backgrounds/Contact-bg-desktop.png">
+        <img src='./Website-icons/backgrounds/Contact-bg-phone.png' alt='contact background'>
+      </picutre>
+  </main>
+</body>
+
+</html>
