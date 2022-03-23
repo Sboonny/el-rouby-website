@@ -92,7 +92,7 @@ body {
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
   color: hsl(var(--clr-white));
-  background: linear-gradient(150deg, hsl(36, 50%, 25%) 40%, hsl(36, 76%, 55%));
+  background: linear-gradient(300deg, hsl(36, 50%, 25%) 40%, hsl(36, 76%, 55%));
   line-height: 1.5;
   min-height: 100vh;
   scrollbar-gutter: stable;
@@ -315,22 +315,13 @@ select {
   transform: scale(1.005);
 }
 
-/* primary-header */
-.primary-header {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-area {
-  justify-content: flex-end;
-  outline: 2px solid green;
-}
-
-
+/* primary-header */ 
+ 
 .primary-navigation {
   --gap: clamp(1.5rem, 5vw, 3.5rem);
   --underline-gap: 2rem;
   list-style: none;
+  font-weight: 500;
   padding: 0;
   margin: 0;
   background: hsl(var(--clr-white) / 0.05);
@@ -409,20 +400,29 @@ select {
   }
 }
 
+
+.primary-header {
+  justify-content: flex-end;
+  align-items: center;
+}
+
 @media (min-width: 45em) {
-  .primary-header::after {
+  .primary-header::before {
     content: "";
     display: block;
     position: relative;
     height: 1px;
     width: 100%;
-    margin-right: -2.5rem;
+    margin-left: -2.5rem;
     background: hsl(var(--clr-white) / 0.25);
-    order: 1;
+    order: 2;
   }
 
+  picture {
+    order: 3;
+  }
   nav {
-    order: 2;
+    order: 1;
   }
 
   .primary-navigation {
@@ -518,19 +518,30 @@ body {
 }
 @media (min-width: 45em) {
   .logo {
-    margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+    padding-right: 2rem;
+    margin:  1.5rem clamp(3.5rem, 5vw, 1.5rem);
   }
   .grid-container {
-    text-align: left;
+    text-align: right;
     column-gap: var(--container-gap, 2rem);
     grid-template-columns: repeat(2, minmax(1rem, 1fr));
   }
 
   .grid-container--home {
     padding-bottom: max(6rem, 20vh);
+    grid-template-areas:
+    "image content"
   }
   .grid-container--home picture {
     width: 50vw;
+  }
+
+  .home-content {
+    grid-area: content;
+  }
+
+  .home-image {
+    grid-area: image;
   }
 }
 
@@ -560,7 +571,7 @@ body {
 }
 
 .modal::backdrop {
-  background: linear-gradient(150deg, hsl(36, 50%, 5%) 90%, hsl(36, 76%, 15%));
+  background: linear-gradient(300deg, hsl(36, 50%, 5%) 90%, hsl(36, 76%, 15%));
   backdrop-filter: blur(1.5rem);
   opacity: 0.2;
 }

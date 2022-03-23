@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Nunito:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
   <meta name='description' content='Custom cleareance services in Egypt' />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Al Rouby Prototype</title>
-  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <title>الروبي لتخليص الجمركي</title>
+  <link rel="stylesheet" href="styles-ar.css" type="text/css" />
   <link rel='canonical' href='local/page/ar-eg' title='الروبي لتخليص الجمركي'>
   <link rel='alternate' href='main/page/en-us'>
   <script src="script.js" defer></script>
@@ -19,26 +19,29 @@
 </head>
 
 <body class="home">
-  <a class="skip-to-content" href="#main">Skip to content</a>
+  <a class="skip-to-content" href="#main">المواد الاصاصية</a>
   <header class="flex primary-header">
     <picture>
       <source media='(min-width: 35em)' srcset='./Website-icons/Logo.png'>
-      <img src="./Website-icons/Logo-tablet.png" alt="al-rouby logo" class="logo" style="justify-content: flex-start" />
+      <img src="./Website-icons/Logo-tablet.png" alt="al-rouby logo" class="logo" style="justify-content: flex-end" />
     </picture>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
     <nav> 
       <ul
         id="primary-navigation"
         data-visible="false"
         class="primary-navigation underline-indicators flex"
       > 
-        <li class="active">
+        <li >
           <a
             class="ff-sans-cond uppercase text-white letter-spacing-2"
             href="index.html"
             >English</a
           >
         </li>
-        <li >
+        <li class="active">
           <a
             class="ff-sans-cond uppercase text-white"
             href="index-eg.html"
@@ -49,83 +52,81 @@
     </nav>
   </header>
   <main id="main" class="grid-container grid-container--home flow">
-    <article class="flow">
-      <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
-        CUSTOM CLEARANCE
-        <span class="d-block fs-700 ff-serif text-white letter-spacing-3">AL-ROUBY</span>
+    <article class="flow home-content">
+      <h1 class="text-accent fs-500 ff-sans-cond uppercase">
+        التخليص الجمركي
+        <span class="d-block fs-700 ff-serif text-white">الروبي</span>
       </h1>
-      <p class="fs-500 letter-spacing-3 text-accent">
-        was established in 1988.
+      <p class="fs-500 text-accent">
+        أنشاء في 1988
       </p>
-      <p class='fs-400 letter-spacing-4 text-accent'>
-        You can expect our services in every Egyptian port. Whether you are
-        worried about taxes, suitable port for you goods, or transporting your
-        goods in Egypt, We will provide the most effecent way to insure your
-        success.
+      <p class='fs-400 text-accent'>بدأت طريقها بتخليص الجمركي في ميناء بورتوفيق 
+ثم توسعت لكافة موانئ كانت من الاوائل الشركات في ميناء
+ دبئ الدولي بالعين السخنة 
       </p>
 
-      <button class="large-button uppercase ff-serif text-dark bg-white open-button fs-500">Contact</button>
+      <button class="large-button uppercase ff-serif text-dark bg-white open-button fs-500">تواصل</button>
       <!-- modal -->
       <div class='flex '>
         <dialog class="modal" id="modal">
-          <h2 class='text-accent ff-sans-cond'>Link to us</h2>
+          <h2 class='text-accent ff-sans-cond' lang='en'>Link</h2>
           <form class="form" method="dialog">
             <fieldset class='flex flex-direction-columns '>
-              <label for='name' class='text-accent ff-sans-normal'>Your name </label>
+              <label for='name' class='text-accent ff-sans-normal'>أسمك</label>
               <input id="name" type="text" class='fs-200 ff-sans-normal text-dark' required>
-              <label for='email' class='text-accent ff-sans-normal'>Your email </label>
+              <label for='email' class='text-accent ff-sans-normal'>أيملك الالكتروني</label>
               <input id='email' type="email" class='fs-200 ff-sans-normal text-dark' required>
-              <label for="telNo" class='text-accent ff-sans-normal'>Phone number</label>
+              <label for="telNo" class='text-accent ff-sans-normal'>رقم هاتف الجوال</label>
               <input id="telNo" name="phone" class='phone-input fs-200 ff-sans-normal text-dark' title='Please enter a phone number example: +201000000000' pattern="\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*" type="tel" required>
-              <button class="submit-button large-button fs-300 ff-serif uppercase" type="submit">submit</button>
+              <button class="submit-button large-button fs-300 ff-serif uppercase" type="submit">أرسال</button>
             </fieldset>
-            <p class='text-accent ff-sans-normal fs-300 border-top'>Want to know about custom cleareance, You can reach us with:</p>
+            <p class='text-accent ff-sans-normal fs-300 border-top'>استفسارات لاي شئ يخص الجمارك</p>
             <div class='flex flex-direction-rows icons' style='--gap: 2em'>
 
               <a href='#'>
                 <picture>
                   <source media='(min-width: 35em)' srcset='./Website-icons/icons/facebook-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/facebook.png">
-                  <img src='./Website-icons/icons/facebook-phone.png' alt='facebook'>
+                  <img src='./Website-icons/icons/facebook-phone.png' alt='صفحة فيس بوك'>
                 </picture>
               </a>
 
               <a href='#'>
                 <picture>
                   <source media='(min-width: 35em)' srcset='./Website-icons/icons/linkedin-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/linkedin.png">
-                  <img src='./Website-icons/icons/linkedin-phone.png' alt='linkedin'>
+                  <img src='./Website-icons/icons/linkedin-phone.png' alt='صفحة linkedin'>
                 </picture>
               </a>
 
               <a href='#'>
                 <picture>
                   <source media='(min-width: 35em)' srcset='./Website-icons/icons/telegram-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/telegram.png">
-                  <img src='./Website-icons/icons/telegram-phone.png' alt='telegram'>
+                  <img src='./Website-icons/icons/telegram-phone.png' alt='برنامج تلجرام'>
                 </picture>
               </a>
 
               <a href='#'>
                 <picture>
                   <source media='(min-width: 35em)' srcset='./Website-icons/icons/email-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/email.png">
-                  <img src='./Website-icons/icons/email-phone.png' alt='email'>
+                  <img src='./Website-icons/icons/email-phone.png' alt='ايمل الالكتروني'>
                 </picture>
               </a>
 
               <a href='#'>
                 <picture>
                   <source media='(min-width: 35em)' srcset='./Website-icons/icons/whatsapp-tablet.png' media='(min-width: 45em)' srcset="./Website-icons/icons/whatsapp.png">
-                  <img src='./Website-icons/icons/whatsapp-phone.png' alt='whatsapp'>
+                  <img src='./Website-icons/icons/whatsapp-phone.png' alt='برنامج واتساب'>
                 </picture>
               </a>
 
             </div>
-            <button class="button close-button text-accent large-button fs-300 ff-serif uppercase">Close</button>
+            <button class="button close-button text-accent large-button fs-300 ff-serif uppercase">أغلق</button>
           </form>
         </dialog>
       </div>
     </article>
     <picture>
       <source media='(min-width: 45em)' srcset="/Website-icons/backgrounds/Home-image.png">
-      <img src='./Website-icons/backgrounds/Home-image-phone.png' alt='shipping port'>
+      <img class="home-image" src='./Website-icons/backgrounds/Home-image-phone.png' alt='ميناء شحن'>
       </picutre>
   </main>
 </body>
